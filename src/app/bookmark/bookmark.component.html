@@ -1,0 +1,10 @@
+<span class="mat-dialog-title">Content</span>
+<mat-card *ngFor="let item of filteredBookmarks" fxLayout="column" fxLayoutGap="2%">
+  <div fxLayout="row">
+    <div fxFlex="90%" fxLayout="row">
+      <div fxFlex="20%">{{ item.name }}</div>
+      <a fxFlex [href]="item.url">{{ item.url }}</a>
+    </div>
+    <button mat-icon-button fxFlex (click)="deleteBookmark(item.id)"><mat-icon>close</mat-icon></button>
+  </div>
+</mat-card>

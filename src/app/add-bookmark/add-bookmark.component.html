@@ -1,0 +1,30 @@
+<div fxLayout="column" fxLayoutAlign="center center">
+  <mat-form-field>
+    <input matInput placeholder="Enter bookmark name" [formControl]="bookmarkName" required />
+    <mat-error *ngIf="bookmarkName.invalid">You must enter a name</mat-error>
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Enter bookmark url" [formControl]="bookmarkUrl" required />
+    <mat-error *ngIf="bookmarkUrl.invalid">You must enter a url</mat-error>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-select [formControl]="bookmarkGroup" required placeholder="Enter group">
+      <mat-option *ngFor="let item of groups" [value]="item">
+        {{ item }}
+      </mat-option>
+    </mat-select>
+    <mat-error *ngIf="bookmarkGroup.invalid">You must select a group</mat-error>
+  </mat-form-field>
+  <br />
+  <div fxLayout="row" fxLayoutGap="5%">
+    <button
+      mat-raised-button
+      color="primary"
+      [disabled]="!bookmarkName.valid || !bookmarkUrl.valid || !bookmarkGroup.valid"
+      (click)="createBookmark()"
+    >
+      Add
+    </button>
+    <button mat-raised-button color="warn" routerLink="/">Cancel</button>
+  </div>
+</div>

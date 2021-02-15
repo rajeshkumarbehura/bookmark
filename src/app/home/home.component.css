@@ -1,0 +1,18 @@
+.main-container {
+  position: absolute;
+  top: 72px;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+}
+
+.side-container {
+  width: 300px;
+  text-align: center;
+  top: 10px;
+}
+
+.region-container {
+  text-align: center;
+  top: 10px;
+}

@@ -1,0 +1,12 @@
+<mat-sidenav-container class="main-container">
+  <mat-sidenav mode="side" opened class="side-container">
+    <div><strong>Groups</strong></div>
+    <br />
+    <mat-radio-group *ngFor="let item of groups" [(ngModel)]="groupName" fxLayout="column">
+      <mat-radio-button style="margin-top: 10px" [value]="item">{{ item }}</mat-radio-button>
+    </mat-radio-group>
+  </mat-sidenav>
+  <mat-sidenav-content class="region-container">
+    <app-bookmark [groupName]="groupName"></app-bookmark>
+  </mat-sidenav-content>
+</mat-sidenav-container>

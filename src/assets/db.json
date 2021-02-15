@@ -1,0 +1,134 @@
+{
+  "bookmarks": [
+    {
+      "id": 1,
+      "name": "Tripadvisor",
+      "url": "https://www.tripadvisor.in/",
+      "group": "travel"
+    },
+    {
+      "id": 2,
+      "name": "Trivago",
+      "url": "https://www.trivago.in/",
+      "group": "travel"
+    },
+    {
+      "id": 3,
+      "name": "Angular docs",
+      "url": "https://angular.io/docs",
+      "group": "work"
+    },
+    {
+      "id": 4,
+      "name": "About Firebase",
+      "url": "https://medium.com/firebase-developers/what-is-firebase-the-complete-story-abridged-bcc730c5f2c0",
+      "group": "work"
+    },
+    {
+      "id": 5,
+      "name": "Balance exercise",
+      "url": "https://www.healthifyme.com/blog/all-about-balance-exercise-and-the-different-ways-to-practice-it/",
+      "group": "health"
+    },
+    {
+      "id": 6
+    },
+    {
+      "id": 7,
+      "name": "vcv"
+    },
+    {
+      "id": 9
+    },
+    {
+      "id": 11,
+      "name": "instagram",
+      "url": "https://www.raywenderlich.com/3-firebase-tutorial-getting-started",
+      "group": "leisure"
+    },
+    {
+      "id": 136,
+      "name": "yoga benefits",
+      "url": "https://www.webmd.com/balance/guide/the-health-benefits-of-yoga",
+      "group": "health"
+    },
+    {
+      "id": 137,
+      "name": "cardio exercises",
+      "url": "https://www.verywellfit.com/best-home-cardio-exercises-1231273",
+      "group": "health"
+    },
+    {
+      "id": 138,
+      "name": "Yoga",
+      "url": "https://www.artofliving.org/in-en/yoga",
+      "group": "Health"
+    },
+    {
+      "id": 140,
+      "name": "Ionic guide",
+      "url": "https://ionicframework.com/#",
+      "group": "Work"
+    },
+    {
+      "id": 142,
+      "name": "",
+      "url": "",
+      "group": ""
+    },
+    {
+      "id": 143,
+      "name": "",
+      "url": "",
+      "group": ""
+    },
+    {
+      "id": 144,
+      "name": "",
+      "url": "",
+      "group": ""
+    },
+    {
+      "id": 145,
+      "name": "",
+      "url": "",
+      "group": ""
+    },
+    {
+      "id": 146,
+      "name": "",
+      "url": "",
+      "group": ""
+    },
+    {
+      "id": 147,
+      "name": "youtube",
+      "url": "https://youtube.com/",
+      "group": "Personal"
+    },
+    {
+      "id": 151,
+      "name": "Cardio exercises",
+      "url": "https://www.verywellfit.com/best-home-cardio-exercises-1231273",
+      "group": "Health"
+    },
+    {
+      "id": 152,
+      "name": "Google Map",
+      "url": "https://www.google.com/maps/",
+      "group": "Personal"
+    },
+    {
+      "id": 153,
+      "name": "Gitlab",
+      "url": "https://about.gitlab.com/",
+      "group": "Work"
+    },
+    {
+      "id": 154,
+      "name": "Jira",
+      "url": "https://www.atlassian.com/software/jira",
+      "group": "Work"
+    }
+  ]
+}
