@@ -1,7 +1,9 @@
 ## Description of the solution
 
-This project was generated with Angular CLI version 8.3.8. Project uses Angular material for user interface and ngrx for managing the state. Used NgRx
-store and effects to manage bookmarks on REST services. Developed three REST services:
+Feature Implemented:
+   1. Add Bookmark by group
+   2. View Bookmark by group
+   3. Delete Bookmark by group
 
 Used HTTP GET method for displaying the bookmarks. Bookmarks are then filterd on the basis of groups. Used HTTP POST method for creating bookmarks.
 Used HTTP Delete method for deleting the bookmarks.
@@ -10,9 +12,25 @@ Used Json server to simulate a backend REST service to deliver data in JSON form
 
 ## Instructions to run the application
 
-To run the json server, add "json:server": "json-server --watch db.json" in package.json. Then run the command "npm run json:server". It will start
+Step 1 :  To install all package and library, use below command.
+````
+ yarn install
+````
+
+Step 2: Run Json Server
+
+To run the json server, use below command & it will start
 running on localhost:3000. Use this as url for REST APIs.
 
+````
+yarn json:server
+````
+
+Step 3: Run the application
+
+```
+yarn start
+```
 Next, to run the user interface, open a new cmd window and run "npm start". It will start running on localhost:4200
 
 ## Screenshots
@@ -33,14 +51,37 @@ Run `ng generate component component-name` to generate a new component. You can 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
 ## Running unit tests
+This applicaiton use Karma to run test cases.
+Below command helps to run test cases & also produces code coverage report
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```
+yarn test
+```
+
+Code coverage report :
+````
+Coverage summary  
+Statements   : 93.27% ( 97/104 ) 
+Branches     : 90.91% ( 10/11 )
+Functions    : 80.56% ( 29/36 )
+Lines        : 95.35% ( 82/86 )
+````
+
+## Code Format and Clean before pushing to Git 
+
+Clean and format using lint & prettfier. This feature later can hookup with git, so that any push command fire, it must go through formatting code
+```
+yarn prettier:format
+yarn lint
+```
 
 ## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Not implemented at this stage due to lack of time, But application must build integration test cases.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the
-[Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Review & Thoughts
+1. Project needs to be more structured based on folder structure. Good folder architecture helps to understand code and maintain it.
+2. Every feature must implement with Module style, which helps to build efficient testing mechanism and plug&play style of coding.
+3. Code formatting must be step to cleanup.
+4. Error log tracking must be done using elastic search, log rocket.
+5. Every API fired must attached with requestID.
